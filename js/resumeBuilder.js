@@ -1,15 +1,12 @@
+/*
 var awesomeThoughts = "I'm Nadia and I am AWESOME!";
 var funThoughts = awesomeThoughts.replace("AWESOME","FUN");
     //console.log(awesomeThoughts);
     //console.log(funThoughts);
 //$("#main").append(funThoughts);
 
-var role = "Web Developer";
-var formattedName = HTMLheaderName.replace("%data%","Nadia Borzunova");
-var formattedRole = HTMLheaderRole.replace("%data%",role);
+//var role = "Web Developer";
 
-$("#header").prepend(formattedRole);
-$("#header").prepend(formattedName);
 
 var s = "audacity";
 s = s[1].toUpperCase() + s.slice(2);
@@ -48,7 +45,7 @@ var incrementLastArrayElement = function(_array) {
 //console.log(incrementLastArrayElement(sampleArray));
 
 
-
+*/
 
 //Your Challenge
 
@@ -59,8 +56,8 @@ var incrementLastArrayElement = function(_array) {
 
 //Take a look at MDN's documentation on string methods and click "Continue" when you're ready to give it a shot.
 
-var name = "AlbERt EINstEiN";
-
+//var name = "AlbERt EINstEiN";
+/*
 function nameChanger(oldName) {
     var finalName = oldName;
     // Your code goes here!
@@ -74,6 +71,117 @@ function nameChanger(oldName) {
     // Don't delete this line!
     return finalName;
 };
-
+*/
 // Did your code work? The line below will tell you!
-console.log(nameChanger(name));
+//console.log(nameChanger(name));
+var skills = ["html", "css", "happiness", "fight against dark side"];
+
+var bio = {
+    "name" : "Nadia Borzunova",
+    "role" : "Web Developer",
+    "contacts" : {
+        "mobile": "+7 926 150 2605",
+        "email": "freeqs@gmail.com",
+        "github": "Vlaakith",
+        "twitter": "@free_network",
+        "location": "Moscow",
+        "blog": "nadin.tel"
+    },
+    //"picture" : "images/me.jpg",
+    "picture": "http://placekitten.com/g/220/150",
+    "welcome" : "Hello there!",
+    "skills" : skills
+};
+
+var formattedName = HTMLheaderName.replace("%data%", bio.name);
+var formattedRole = HTMLheaderRole.replace("%data%", bio.role);
+
+$("#header").prepend(formattedRole);
+$("#header").prepend(formattedName);
+
+var formattedMobile = HTMLmobile.replace("%data%", bio.contacts.mobile);
+var formattedEmail = HTMLemail.replace("%data%", bio.contacts.email);
+var formattedGithub = HTMLgithub.replace("%data%", bio.contacts.github);
+var formattedTwitter = HTMLtwitter.replace("%data%", bio.contacts.twitter);
+var formattedLocation = HTMLlocation.replace("%data%", bio.contacts.location);
+var formattedBlog = HTMLblog.replace("%data%", bio.contacts.blog);
+
+$("#topContacts").append(formattedMobile);
+$("#topContacts").append(formattedEmail);
+$("#topContacts").append(formattedGithub);
+$("#topContacts").append(formattedTwitter);
+$("#topContacts").append(formattedLocation);
+$("#topContacts").append(formattedBlog);
+
+var formattedPic = HTMLbioPic.replace("%data%", bio.picture);
+var formattedWelcome = HTMLWelcomeMsg.replace("%data%", bio.welcome);
+
+$("#header").append(formattedPic);
+$("#header").append(formattedWelcome);
+
+var formattedSkills0 = HTMLskills.replace("%data%", bio.skills[0]);
+var formattedSkills1 = HTMLskills.replace("%data%", bio.skills[1]);
+var formattedSkills2 = HTMLskills.replace("%data%", bio.skills[2]);
+var formattedSkills3 = HTMLskills.replace("%data%", bio.skills[3]);
+
+$("#header").append(HTMLskillsStart);
+$("#skills").append(formattedSkills0);
+$("#skills").append(formattedSkills1);
+$("#skills").append(formattedSkills2);
+$("#skills").append(formattedSkills3);
+
+var work = {
+    "employer": "MebelVia.ru",
+    "title": "Head of marketing",
+    "dates": "2013 - present time",
+    "location": "Moscow",
+    "desc": "Control over all marketing and advertising channel to the site."
+};
+
+var work_employer = HTMLworkEmployer.replace("%data%", work["employer"]);
+var work_title = HTMLworkTitle.replace("%data%", work["title"]);
+var work_dates = HTMLworkDates.replace("%data%", work["dates"]);
+var work_location = HTMLworkLocation.replace("%data%", work["location"]);
+//var work_desc = HTMLworkDescription.replace("%data%", work.desc);
+
+$("#workExperience").append(HTMLworkStart);
+$(".work-entry").append(work_employer);
+$(".work-entry").append(work_title);
+$(".work-entry").append(work_dates);
+$(".work-entry").append(work_location);
+$(".work-entry").append(HTMLworkDescription.replace("%data%", work.desc));
+
+
+var education = {
+    "schools": [
+        {
+            "school": "MGUT",
+            "degree": "Economist",
+            "dates": "Long-long ego",
+            "location": "Moscow",
+            "major": "marketing, finance"
+        },
+        {
+            "school": "School 45",
+            "degree": "Graduated student",
+            "dates": "Till 2000",
+            "location": "Komsomolsk-on-Amure",
+            "major": "Usual stuff"
+        }
+    ],
+    "online": [
+        {
+            "title": "Intro to Computer Science",
+            "school": "Udacity",
+            "dates": "2014",
+            "url": "http://udacity.com"
+        }
+    ]
+}
+
+$("#education").append(HTMLschoolStart);
+$(".education-entry").append(HTMLschoolName.replace("%data%", education.school));
+$(".education-entry").append(HTMLschoolDegree.replace("%data%", education.degree));
+$(".education-entry").append(HTMLschoolDates.replace("%data%", education.dates));
+$(".education-entry").append(HTMLschoolLocation.replace("%data%", education.location));
+$(".education-entry").append(HTMLschoolMajor.replace("%data%", education.major));
