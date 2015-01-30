@@ -6,29 +6,29 @@ var bio = {
         "email": "freeqs@gmail.com",
         "github": "Vlaakith",
         "twitter": "@free_network",
-        "location": "Moscow",
+        "location": "Shadow",
         "blog": "nadin.tel"
     },
     "picture" : "images/me.jpg",
-    "welcomeMessage": "<p>\"Now I did a job. I got nothing but trouble since I did it, not to mention more than a few unkind words as regard to my character so let me make this abundantly clear. I <span>do the job</span>. And then I get <span>paid</span>.\"</p>",
-    "skills" : ["leadership", "cargo shipping", "transportation", "protection"]
+    "welcomeMessage": "Take my love, take my land, take me where I cannot stand. I don't care, I'm still free. You can't take the sky from me. Take me out to the black, tell them I ain't comin' back. Burn the land and boil the sea - you can't take the sky from me.",
+    "skills" : ["html", "css", "happiness", "fight against dark side"]
 };
 
 var work = {
     "jobs": [
         {
-            "employer": "Independents army",
-            "title": "Sergeant",
-            "dates": "2505 - 2515",
+            "employer": "MebelVia.ru",
+            "title": "Head of marketing",
+            "dates": "2013 - present time",
             "location": "Moscow, Russia",
-            "description": "Volunteered for the Independents army during the Unification War against the Alliance."
+            "description": "Control over all marketing and advertising channel to the site."
         },
         {
-            "employer": "Self-employment",
-            "title": "Captain of the Firefly-class transport ship Serenity",
-            "dates": "2516 - still flying",
+            "employer": "Adlook",
+            "title": "Chief Executive Officer",
+            "dates": "2007 - 2013",
             "location": "Moscow, Russia",
-            "description": "Cargo shipping and some other things."
+            "description": "Control over everything."
         }
     ]
 };
@@ -40,9 +40,8 @@ var projects = {
         "dates": "2010",
         "description": "Description for first project.",
         "images": [
-            "images/proj11.jpg",
-            "images/proj12.jpg",
-            "images/proj13.jpg"
+            "images/kote1.jpg",
+            "images/kote1.jpg"
             ]
         },
         {
@@ -50,9 +49,8 @@ var projects = {
         "dates": "2011",
         "description": "Description for second project.",
         "images": [
-            "images/proj21.jpg",
-            "images/proj23.jpg",
-            "images/proj22.jpg"
+            "images/sceptical_lis.jpeg",
+            "images/sceptical_lis.jpeg"
             ]
         }    
     ]
