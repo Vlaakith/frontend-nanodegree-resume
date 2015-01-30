@@ -244,5 +244,3 @@ window.addEventListener('load', initializeMap);
 
 
 
-
-

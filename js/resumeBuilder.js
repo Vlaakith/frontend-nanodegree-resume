@@ -73,7 +73,7 @@ var education = {
             "degree": "Graduated student",
             "dates": "Till 2000",
             "location": "Komsomolsk-on-Amure",
-            "major": ["]Usual stuff","And more usuall stuff"],
+            "major": ["Usual stuff","And more usuall stuff"],
             "url": "google.com"
         }
     ],
@@ -195,6 +195,34 @@ projects.display = function() {
 }
 
 projects.display(); 
+
+
+education.display = function() {
+    for (school in education.schools) {       
+        $("#education").append(HTMLschoolStart);
+        var formattedName = HTMLschoolName.replace("%data%",education.schools[school].name);
+        $(".education-entry:last").append(formattedName);
+        $(".education-entry:last").append(HTMLschoolDegree.replace("%data%",education.schools[school].degree));
+        $(".education-entry:last").append(HTMLschoolDates.replace("%data%",education.schools[school].dates));
+        $(".education-entry:last").append(HTMLschoolLocation.replace("%data%",education.schools[school].location));
+        $(".education-entry:last").append(HTMLschoolMajor.replace("%data%",education.schools[school].major));
+    }
+    for (onlineschool in education.onlineCourse) {       
+        $("#education").append(HTMLonlineClasses);
+        var formattedName = HTMLonlineTitle.replace("%data%",education.onlineCourse[onlineschool].title);
+        $("#education").append(formattedName);
+        $("#education").append(HTMLonlineSchool.replace("%data%",education.onlineCourse[onlineschool].school));
+        $("#education:last").append(HTMLonlineDates.replace("%data%",education.onlineCourse[onlineschool].dates));
+        $("#education:last").append(HTMLonlineURL.replace("%data%",education.onlineCourse[onlineschool].url));
+
+    }
+}
+
+education.display(); 
+
+
+
+
 
 $("#mapDiv").append(googleMap);
 
