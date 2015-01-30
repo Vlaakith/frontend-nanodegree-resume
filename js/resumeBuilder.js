@@ -117,7 +117,7 @@ $(document).click(function(loc) {
 
   logClicks(x,y);
 });
-*/
+
 /*function locationazer (theWork) {
     var work_location = [];
         for (var job in theWork.jobs) {
