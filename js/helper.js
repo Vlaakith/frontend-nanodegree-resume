@@ -42,7 +42,7 @@ var HTMLprojectDates = '<div class="date-text">%data%</div>';
 var HTMLprojectDescription = '<p><br>%data%</p>';
 var HTMLprojectImage = '<img src="%data%">';
 
-var HTMLeducationStart = '<div id="container"></div><div class="text_as"><h2>Education</h2> ';
+var HTMLeducationStart = '<div id="container"></div><div class="text_as"><h2>Education</h2>';
 var HTMLeducationEnd = "</div>";
 
 var HTMLschoolStart = '<div class="education-entry"></div>';
@@ -52,7 +52,8 @@ var HTMLschoolDates = '<div class="date-text">%data%</div>';
 var HTMLschoolLocation = '<div class="location-text">%data%</div>';
 var HTMLschoolMajor = '<p><br>Major: %data%</p>';
 
-var HTMLonlineClasses = '<div class="online-entry"><h3>Online Classes</h3></div>';
+var HTMLonlineHead = '<h3>Online Classes</h3>';
+var HTMLonlineClasses = '<div class="online-entry"></div>';
 var HTMLonlineTitle = '<a href="#">%data%';
 var HTMLonlineSchool = ' - %data%</a>';
 var HTMLonlineDates = '<div class="date-text">%data%</div>';
